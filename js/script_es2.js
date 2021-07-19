@@ -6,13 +6,13 @@ Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo
 studente inserendo nell’ordine: nome, cognome e età.
 
 */
-// initialize vars
+//! initialize vars
 
 let count = 0;
 let currentName = "";
 let currentSurname = "";
 let currentAge = 0;
-// initialize array of object students
+//! initialize array of object students
 let students = [
     {
         name: "giuseppe",
