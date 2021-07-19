@@ -71,7 +71,7 @@ do {
 //write students after insert 3 object
 writeListsStudent();
 
-
+//******************** FUNCTIONS ************************** */
 
 /**
  * 
@@ -99,7 +99,6 @@ function isValidateNum(num) {
     }
     return true;
 }
-
 
 /**
  * 
