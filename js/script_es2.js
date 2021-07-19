@@ -7,7 +7,7 @@ studente inserendo nell’ordine: nome, cognome e età.
 
 */
 // initialize vars
-let msg = "";
+
 let count = 0;
 let currentName = "";
 let currentSurname = "";
@@ -40,8 +40,7 @@ let students = [
 const list = document.getElementById("list-students");
 //debug inline
 console.table(students);
-//write students 
-writeListsStudent();
+
 // until 3 attepts are executed
 do {
     currentName = prompt("inserisci il nome dello studente (" + (count + 1) + " /3): ").toLowerCase();
@@ -69,7 +68,8 @@ do {
 } while (count < 3);
 
 //write students after insert 3 object
-writeListsStudent();
+list.innerHTML = writeListsStudent();
+
 
 //******************** FUNCTIONS ************************** */
 
@@ -115,12 +115,15 @@ function isValidate(str) {
  * write array of objects students
  */
 function writeListsStudent() {
+    let msg="";
+    list.innerHTML="";
     for (let i = 0; i < students.length; i++) {
         msg += "<p class=\"lead\"> STUDENTE " + (i + 1) + "</p>\n" + " <li> <strong>Nome: </strong>" +
             students[i].name + "</li><li><strong>Cognome: </strong>" + students[i].surname + "</li> \n";
     }
 
-    list.innerHTML = msg;
-    //debug inline
-    console.table(students);
+      //debug inline
+      console.table(students);
+     return msg;
+  
 }
