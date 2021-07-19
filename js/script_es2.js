@@ -12,7 +12,6 @@ let count = 0;
 let currentName = "";
 let currentSurname = "";
 let currentAge = 0;
-let isCorrect = false;
 // initialize array of object students
 let students = [
     {
