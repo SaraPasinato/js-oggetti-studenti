@@ -1,3 +1,14 @@
 #section_es1{
     min-height: 30vh;
 }
+
+#list-students li{
+    list-style-type: none;
+    font-style: italic;
+}
+
+#list-students p{
+    font-weight: bold;
+    margin: 5px 0;
+}
+
