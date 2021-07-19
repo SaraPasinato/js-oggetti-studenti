@@ -78,7 +78,7 @@ list.innerHTML = writeListsStudent();
  * @param {string} strName 
  * @param {string} strSur 
  * @param {number} age 
- * @returns 
+ * @returns {boolean}
  */
 function isDuplicate(strName, strSur, age) {
     for (var key in students) {
@@ -111,8 +111,9 @@ function isValidate(str) {
     }
     return true;
 }
-/**
- * write array of objects students
+/** write array of objects students
+ * 
+ * @returns msg html elements
  */
 function writeListsStudent() {
     let msg="";
