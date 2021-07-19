@@ -1,8 +1,8 @@
 /* 
 ES 2
-?Creare un array di oggetti di studenti.
-?Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
-?Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto 
+Creare un array di oggetti di studenti.
+Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
+Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto 
 studente inserendo nell’ordine: nome, cognome e età.
 
 */
@@ -16,23 +16,23 @@ let isCorrect = false;
 // initialize array of object students
 let students = [
     {
-        name: "Giuseppe",
-        surname: "Rossi",
+        name: "giuseppe",
+        surname: "rossi",
         age: 30,
     },
     {
-        name: "Maria",
-        surname: "Verdi",
+        name: "maria",
+        surname: "verdi",
         age: 50,
     },
     {
-        name: "Andrea",
-        surname: "Neri",
+        name: "andrea",
+        surname: "neri",
         age: 10,
     },
     {
-        name: "Marco",
-        surname: "Bianchi",
+        name: "marco",
+        surname: "bianchi",
         age: 40,
     }
 ]
@@ -44,8 +44,8 @@ console.table(students);
 writeListsStudent();
 // until 3 attepts are executed
 do {
-    currentName = prompt("inserisci il nome dello studente (" + (count + 1) + " /3): ");
-    currentSurname = prompt("inserisci il cognome dello studente (" + (count + 1) + " /3): ");
+    currentName = prompt("inserisci il nome dello studente (" + (count + 1) + " /3): ").toLowerCase();
+    currentSurname = prompt("inserisci il cognome dello studente (" + (count + 1) + " /3): ").toLowerCase();
     currentAge = parseInt(prompt("inserisci l'età dello studente (" + (count + 1) + " /3): "));
     //? validation for inputs  
     if (isValidate(currentName) && isValidate(currentSurname) && isValidateNum(currentAge)) {
