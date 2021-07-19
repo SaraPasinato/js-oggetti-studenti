@@ -64,7 +64,7 @@ do {
         alert("I valori inseriti non sono validi!");
     }
 
-} while (count < 3);
+} while (count < 3);  //? Maight I use students.length != 7 only if students have by default 4 elements
 
 //write students after insert 3 object
 list.innerHTML = writeListsStudent();
