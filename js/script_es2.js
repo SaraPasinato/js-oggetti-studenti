@@ -119,7 +119,7 @@ function writeListsStudent() {
     list.innerHTML="";
     for (let i = 0; i < students.length; i++) {
         msg += "<p class=\"lead\"> STUDENTE " + (i + 1) + "</p>\n" + " <li> <strong>Nome: </strong>" +
-            students[i].name + "</li><li><strong>Cognome: </strong>" + students[i].surname + "</li> \n";
+            students[i].name + "</br><strong>Cognome: </strong>" + students[i].surname + "</li> \n";
     }
 
       //debug inline
